@@ -6,7 +6,7 @@ public class suma1y2 {
 	public static void main(String[] ar) {
     	Scanner teclado=new Scanner(System.in);
     	int num1,num2,num3,num4,suma,producto;
-    	System.out.print("Ingrese el primer numero :");
+    	System.out.print("Ingrese numero :");
     	num1=teclado.nextInt();
     	System.out.print("Ingrese el segundo numero :");
     	num2=teclado.nextInt();
