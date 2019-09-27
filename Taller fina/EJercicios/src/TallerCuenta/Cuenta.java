@@ -13,7 +13,9 @@ public class Cuenta {
 	       
 	    Scanner in = new Scanner(System.in);
 	    do{
-	        System.out.println("Ingresa 1 para agregar el titular del cuenta: ");
+	    	System.out.println("      Biembenido a su Sistema de Manejo de Cuenta ");
+	    	System.out.println("            Seleccionar la Opcion Deseada ");
+	    	System.out.println("Ingresa 1 para agregar el titular del cuenta: ");
 	        System.out.println("Ingresa 2 para agregar saldo a la cuenta: ");
 	        System.out.println("Ingresa 3 para retirar saldo a la cuenta: ");
 	        System.out.println("Ingresa 4 para verificar saldo del titular de la cuenta: ");
@@ -92,8 +94,8 @@ public class Cuenta {
 	                        System.out.println(saldo);
 	                         
 	        }
-	        System.out.println("¿Salir de este bucle?");
-	        if(in.next().equals("Si")) sal=true;
+	        System.out.println("¿Salir de este bucle ingrese Si?");
+	        if(in.next().equalsIgnoreCase("Si")) sal=true;
 	        else sal=false;
 	        
 	    }while(!sal);

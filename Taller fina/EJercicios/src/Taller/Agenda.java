@@ -7,14 +7,14 @@ public class Agenda {
 	private Contacto[] contactos;
 
 	 public Agenda() {
-	        this.contactos = new Contacto[2]; 
+	        this.contactos = new Contacto[15]; 
 	   
 	 
 	 }
 
 
 	    public Agenda(int tamanio) {
-	        this.contactos = new Contacto[2]; 
+	        this.contactos = new Contacto[15]; 
 	    }
 	 
 	    public void agregarContacto(Contacto c) {
@@ -28,7 +28,8 @@ public class Agenda {
 	        } else 
 	        {
 	        	
-	        }
+	        	
+	    
 	            boolean encontrado = false;
 	            for (int i = 0; i < contactos.length && !encontrado; i++) 
 	            {
@@ -44,12 +45,15 @@ public class Agenda {
 	            } else {
 	                System.out.println("No puede agreagr el contacto");
 	            }
+	            
+	        }
+	    	
 	        }
 	    
 	    public boolean existeContacto(Contacto c) {
 
 	        for (int i = 0; i < contactos.length; i++) {
-	            if (contactos[i] != null && c.equals(contactos[i])) {
+	            if (contactos[i] != null && c.getNombre().equalsIgnoreCase(contactos[i].getNombre())) {
 	                return true;
 	            }
 	        }

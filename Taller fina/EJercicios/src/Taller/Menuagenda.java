@@ -14,7 +14,7 @@ public class Menuagenda {
        
         
        
-        Agenda agendaTelefonica = new Agenda(2);
+        Agenda agendaTelefonica = new Agenda(15);
         String nombre;
         String correo;
         String telefono;
@@ -22,7 +22,10 @@ public class Menuagenda {
         Contacto c;
         Scanner in = new Scanner(System.in);
         do{
-	        System.out.println("1. Añadir contacto: ");
+        	System.out.println("  Bienbenido a su Agenda Personal  ");
+        	System.out.println("    Seleccione la opcion deseada   ");
+        	System.out.println("  ");
+        	System.out.println("1. Añadir contacto: ");
 	        System.out.println("2. Listar contactos ");
 	        System.out.println("3. Buscar contacto ");
 	        System.out.println("4. Espacios disponibles ");
@@ -83,7 +86,7 @@ public class Menuagenda {
 	        	  
 	        }
 	        System.out.println("¿Si desesa salir del sistema digite Si ?");
-	        if(in.next().equals("Si")) sal=true;
+	        if(in.next().equalsIgnoreCase("Si")) sal=true;  
 	        else sal=false;
 	        
 	    }while(!sal);
